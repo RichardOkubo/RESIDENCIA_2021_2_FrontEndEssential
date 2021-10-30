@@ -1,0 +1,12 @@
+@import url("../default/header-footer.css");
+
+body, main {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+main p, main ul {
+    text-align: justify;
+    margin: 25px;
+}

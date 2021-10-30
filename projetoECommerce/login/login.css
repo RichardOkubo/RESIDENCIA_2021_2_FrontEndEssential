@@ -1,0 +1,52 @@
+@import url("../default/header-footer.css");
+
+:root {
+    --background-color-hover:  #4E439D;
+    --secondary-color: #c9c8e3;
+}
+
+main {
+    height: 100vh;
+    background-color: #ededed;
+}
+
+form {
+    display: grid;
+    grid: auto / 1fr 1fr;
+    gap: 2rem 1rem;
+    position: absolute;
+    padding: 5rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 600px;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, .05);
+}
+
+input, button {
+    border: none;
+    box-shadow: none;
+    font: inherit;
+    width: 100%;
+}
+
+input {
+    padding: 0.25rem;
+    border: 1px solid gray;
+    border-radius: .25rem;
+}
+
+button {
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: .25rem;
+    border-color: var(--background-color-hover);
+    background-color: var(--background-color-hover);
+    color: white;
+}
+
+.login-input {
+    grid-column: span 2;
+}

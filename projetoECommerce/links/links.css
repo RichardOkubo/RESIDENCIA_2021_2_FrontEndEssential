@@ -1,0 +1,28 @@
+@import url("../default/header-footer.css");
+
+body, main {
+   /* height: 100vh; Só para testar */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.duvidasContainer {
+    display: grid;
+    grid-template-columns: 80fr;
+    grid-template-rows: 10fr 50fr;
+    align-content: space-between;
+    justify-content: center;
+ }
+
+ #titulo {
+    /*display: grid;
+    grid-template-rows: 20fr 5fr;*/
+    align-content: center;
+    justify-content: center;
+ }
+
+ #duvidas {
+    align-content: center;
+    justify-content: center;
+ }

@@ -1,0 +1,71 @@
+@import url("../default/header-footer.css");
+
+/* Configurando componentes da 'section' de CATEGORIAS */
+
+body {
+    width: 100% !important;
+    margin: 0;
+}
+
+.container {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.section-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.section-categoria > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.section-categoria p {
+    text-align: center;
+}
+
+/* Configurando componentes da 'section' de NOVOS PRODUTOS */
+
+.section-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.section-produtos .grid-2-item:nth-child(1) {
+    grid-row: 1 / 3;
+}
+
+.section-produtos .grid-2-item {
+    display: grid;
+    margin: 0 auto;
+}
+
+.section-produtos .grid-2-item img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: end;
+}
+
+.section-produtos .grid-2-item p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}

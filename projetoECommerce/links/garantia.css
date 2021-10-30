@@ -1,0 +1,35 @@
+@import url("../default/header-footer.css");
+
+body, main {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+span {
+    display: block;
+}
+
+#subTitulo {
+    text-align: center;
+}
+
+.garantiaContainer {
+    display: grid;
+    grid-template-columns: 6fr 70fr 5fr;
+    grid-template-rows: 11fr 60fr;
+    align-content: center;
+    justify-content: center;
+}
+
+#titulo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#garantia {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
